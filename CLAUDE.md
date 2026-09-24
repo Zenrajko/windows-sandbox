@@ -5,11 +5,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## What this folder is
 
 A Windows Sandbox harness for installing and testing software on a clean, throwaway Windows
-image. It is a personal project. It is not a git repo yet, and **don't create one unless asked**.
-`.gitignore` is already written for one: only `setup/`, `docs/`, `README.md`, `CLAUDE.md`,
-`LICENSE` (MIT), `prereqs/README.md`, `logs/.gitkeep` and `shared/.gitkeep` are meant to be versioned. Keep it
-free of employer names and PII. There is no build or test step. The code is PowerShell scripts
-plus one `.wsb` config.
+image. It is a personal project, published as a **public** MIT-licensed GitHub repo
+(`Zenrajko/windows-sandbox`, branch `main`), so anything committed is visible to everyone. Keep it
+free of employer names and PII. Only `setup/`, `docs/`, `README.md`, `CLAUDE.md`, `LICENSE`,
+`prereqs/README.md`, `logs/.gitkeep` and `shared/.gitkeep` are versioned; `.gitignore` keeps
+everything else out, so check `git status` before committing. There is no build or test step. The
+code is PowerShell scripts plus one `.wsb` config.
 
 ## Running it
 

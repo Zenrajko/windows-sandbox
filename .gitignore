@@ -1,0 +1,41 @@
+# Downloaded prerequisite installers and fonts - keep only the README
+prereqs/*
+!prereqs/README.md
+
+# Shared exchange folder (installer packages, test files) - keep only the placeholder
+shared/*
+!shared/.gitkeep
+
+# Setup logs written from inside the sandbox - keep only the placeholder
+logs/*
+!logs/.gitkeep
+
+# Certificates and keys (may contain passwords or private keys)
+*.pfx
+*.p12
+*.cer
+*.crt
+*.key
+*.pem
+
+# Installers and archives anywhere else in the tree
+*.exe
+*.msi
+*.msix
+*.msixbundle
+*.appx
+*.appxbundle
+*.zip
+*.7z
+
+# Logs anywhere else in the tree
+*.log
+
+# Windows folder metadata
+Thumbs.db
+desktop.ini
+
+# Editor settings and backups
+.vscode/
+*.bak
+*~

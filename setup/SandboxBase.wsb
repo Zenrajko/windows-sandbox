@@ -1,0 +1,34 @@
+<Configuration>
+  <MemoryInMB>8192</MemoryInMB>
+  <vGPU>Disable</vGPU>
+  <Networking>Disable</Networking>
+  <AudioInput>Disable</AudioInput>
+  <VideoInput>Disable</VideoInput>
+  <PrinterRedirection>Disable</PrinterRedirection>
+  <ClipboardRedirection>Enable</ClipboardRedirection>
+  <MappedFolders>
+    <MappedFolder>
+      <HostFolder>C:\source\solo\windows-sandbox\shared</HostFolder>
+      <SandboxFolder>C:\sandbox\shared</SandboxFolder>
+      <ReadOnly>false</ReadOnly>
+    </MappedFolder>
+    <MappedFolder>
+      <HostFolder>C:\source\solo\windows-sandbox\logs</HostFolder>
+      <SandboxFolder>C:\sandbox\logs</SandboxFolder>
+      <ReadOnly>false</ReadOnly>
+    </MappedFolder>
+    <MappedFolder>
+      <HostFolder>C:\source\solo\windows-sandbox\setup</HostFolder>
+      <SandboxFolder>C:\sandbox\setup</SandboxFolder>
+      <ReadOnly>true</ReadOnly>
+    </MappedFolder>
+    <MappedFolder>
+      <HostFolder>C:\source\solo\windows-sandbox\prereqs</HostFolder>
+      <SandboxFolder>C:\sandbox\prereqs</SandboxFolder>
+      <ReadOnly>true</ReadOnly>
+    </MappedFolder>
+  </MappedFolders>
+  <LogonCommand>
+    <Command>powershell.exe -NoProfile -ExecutionPolicy Bypass -File C:\sandbox\setup\SetupBase.ps1</Command>
+  </LogonCommand>
+</Configuration>
